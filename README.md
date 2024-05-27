@@ -35,7 +35,7 @@ Um exemplo comum de aplicação do padrão Flyweight é em editores gráficos, o
 
 
 
-![Diagrama de Classes](https://github.com/jvcolosso/Trabalho-Patterns-Flyweight/blob/main/diagrama-flyweight.png)
+|![Diagrama de Classes](https://github.com/jvcolosso/Trabalho-Patterns-Flyweight/blob/main/diagrama-flyweight.png)|
 
 ## Explicação do Código
 

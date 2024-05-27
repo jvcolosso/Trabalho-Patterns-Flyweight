@@ -139,5 +139,7 @@ class FlyweightPatternDemo {
 const demo = new FlyweightPatternDemo();
 demo.run();
 
+## Autores
 
+- [@octokatherine](https://www.github.com/octokatherine)
 

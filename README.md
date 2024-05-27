@@ -33,6 +33,10 @@ O padrão Flyweight sugere dividir os objetos em duas partes:
 
 Um exemplo comum de aplicação do padrão Flyweight é em editores gráficos, onde elementos gráficos como círculos, retângulos e linhas são frequentemente utilizados em grande quantidade. O padrão Flyweight pode ser usado para compartilhar propriedades comuns, como cor e estilo, entre esses elementos, economizando memória.
 
+## Diagrama de Classes
+![Diagrama de Classes](https://github.com/jvcolosso/Trabalho-Patterns-Flyweight/blob/main/diagrama-flyweight.png)
+
+
 ## Implementação em JavaScript
 
 ```javascript
@@ -124,8 +128,6 @@ const demo = new FlyweightPatternDemo();
 demo.run();`
 ```
 
-## Diagrama de Classes
-![Diagrama de Classes](https://github.com/jvcolosso/Trabalho-Patterns-Flyweight/blob/main/diagrama-flyweight.png)
 
 ## Explicação do Código
 
@@ -140,7 +142,9 @@ demo.run();`
 Este diagrama representa a estrutura básica do padrão Flyweight, conforme discutido no seu trabalho. Você pode ajustar e expandir este código conforme necessário para representar com mais detalhes a implementação específica em JavaScript e os detalhes das classes.
 
 
+
+
 ## Autor
 
-- [@jv_colosso](https://www.github.com/jv_colosso)
+- [João Victor Colosso](https://www.github.com/jv_colosso)
 

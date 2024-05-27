@@ -146,5 +146,5 @@ Este diagrama representa a estrutura básica do padrão Flyweight, conforme disc
 
 ## Autor
 
-- [João Victor Colosso](https://www.github.com/jv_colosso)
+- [João Victor Colosso](https://www.github.com/jvcolosso)
 

@@ -34,6 +34,22 @@ O padrão Flyweight sugere dividir os objetos em duas partes:
 Um exemplo comum de aplicação do padrão Flyweight é em editores gráficos, onde elementos gráficos como círculos, retângulos e linhas são frequentemente utilizados em grande quantidade. O padrão Flyweight pode ser usado para compartilhar propriedades comuns, como cor e estilo, entre esses elementos, economizando memória.
 
 
+
+![Diagrama de Classes](imagens/diagrama_flyweight.png)
+
+## Explicação do Código
+
+- **Flyweight**: é a interface que define o método `draw()`. Serve como base para os objetos flyweight.
+  
+- **ConcreteFlyweigh**: é uma classe concreta que implementa a interface `Flyweight`. Ela possui o atributo `color`, representando o estado intrínseco. Esta classe é responsável por desenhar o objeto com base nos parâmetros fornecidos.
+  
+- **FlyweightFactory**: é responsável por criar e gerenciar objetos flyweight. Mantém um mapa de círculos existentes, permitindo a reutilização de objetos. Quando solicitado, fornece instâncias de objetos flyweight com base na cor especificada.
+  
+- **Client**: é a classe cliente que utiliza a fábrica para obter instâncias de flyweight e chamar o método `draw()`. Ela configura os parâmetros extrínsecos (posição e tamanho) e solicita a renderização do objeto.
+
+Este diagrama representa a estrutura básica do padrão Flyweight, conforme discutido no seu trabalho. Você pode ajustar e expandir este código conforme necessário para representar com mais detalhes a implementação específica em JavaScript e os detalhes das classes.
+
+
 ## Implementação em JavaScript
 
 ```javascript
@@ -126,14 +142,3 @@ demo.run();
 
 
 
-## Explicação do Código
-
-- **Flyweight**: é a interface que define o método `draw()`. Serve como base para os objetos flyweight.
-  
-- **ConcreteFlyweigh`**: é uma classe concreta que implementa a interface `Flyweight`. Ela possui o atributo `color`, representando o estado intrínseco. Esta classe é responsável por desenhar o objeto com base nos parâmetros fornecidos.
-  
-- **FlyweightFactory**: é responsável por criar e gerenciar objetos flyweight. Mantém um mapa de círculos existentes, permitindo a reutilização de objetos. Quando solicitado, fornece instâncias de objetos flyweight com base na cor especificada.
-  
-- **Client**: é a classe cliente que utiliza a fábrica para obter instâncias de flyweight e chamar o método `draw()`. Ela configura os parâmetros extrínsecos (posição e tamanho) e solicita a renderização do objeto.
-
-Este diagrama representa a estrutura básica do padrão Flyweight, conforme discutido no seu trabalho. Você pode ajustar e expandir este código conforme necessário para representar com mais detalhes a implementação específica em JavaScript e os detalhes das classes.
